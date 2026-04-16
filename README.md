@@ -1,6 +1,6 @@
 🧠 Mental Health Text Classification (NLP Mini Project)
 
-Working Link of Project: https://anurag-ai-mental-health-assistant.streamlit.app/
+Working URL : https://anurag-ai-mental-health-assistant.streamlit.app/
 
 An end-to-end Machine Learning project that classifies mental health conditions from user text and provides supportive, safety-aware responses through an interactive Streamlit UI.
 
