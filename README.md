@@ -19,37 +19,61 @@ The system is designed with a safety-first approach, especially for detecting hi
 🎯 Objective
 
 Build a reliable NLP-based classification model
+
 Handle class imbalance effectively
+
 Prioritize recall for critical classes (e.g., Suicidal)
+
 Provide real-time predictions via UI
+
 Deliver supportive and meaningful responses
+
 📊 Dataset
+
 Mental Health Sentiment Dataset (~26,350 samples)
+
 7 labeled mental health categories
+
 Real-world user-like text inputs
 
 ⚙️ Project Workflow
+
 Raw Text → Cleaning → Tokenization → Lemmatization → TF-IDF → Model Training → Evaluation → UI Deployment
 
 🧹 Data Preprocessing
+
 The following preprocessing steps were applied:
 
 Lowercasing text
+
 Removing special characters and noise
+
 Tokenization (NLTK)
+
 Stopword removal (keeping negations like "not")
+
 Lemmatization (WordNet)
+
 Rejoining tokens
+
 👉 Ensures the model learns meaningful linguistic patterns instead of noise
 
 🔍 Exploratory Data Analysis (EDA)
+
 Checked dataset structure and null values
+
 Analyzed class distribution
+
 Visualized class imbalance
+
 📌 Key Insight:
+
 Dataset is imbalanced
+
 Certain emotional classes dominate
+
 🔢 Feature Engineering
+
 Used TF-IDF Vectorization:
 
 max_features = 10000
@@ -57,11 +81,15 @@ ngram_range = (1,2)
 sublinear_tf = True
 min_df = 2
 max_df = 0.95
+
 👉 Converts text into numerical form while preserving important features
 
 ✂️ Train-Test Split
+
 80% Training
+
 20% Testing
+
 Used stratified sampling
 🤖 Models Implemented
 🔹 1. Support Vector Machine (SVM) 
