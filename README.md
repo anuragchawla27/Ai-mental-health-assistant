@@ -1,5 +1,7 @@
 🧠 Mental Health Text Classification (NLP Mini Project)
 
+Working Link of Project: https://anurag-ai-mental-health-assistant.streamlit.app/
+
 An end-to-end Machine Learning project that classifies mental health conditions from user text and provides supportive, safety-aware responses through an interactive Streamlit UI.
 
 🚀 Overview
@@ -77,9 +79,13 @@ Certain emotional classes dominate
 Used TF-IDF Vectorization:
 
 max_features = 10000
+
 ngram_range = (1,2)
+
 sublinear_tf = True
+
 min_df = 2
+
 max_df = 0.95
 
 👉 Converts text into numerical form while preserving important features
@@ -91,32 +97,53 @@ max_df = 0.95
 20% Testing
 
 Used stratified sampling
+
 🤖 Models Implemented
+
 🔹 1. Support Vector Machine (SVM) 
+
 Algorithm: LinearSVC
+
 Handles high-dimensional sparse data efficiently
 
 🔹 2. Random Forest
+
 Ensemble-based model
+
 Used for comparison
 
 🔹 3. Logistic Regression
+
 Linear-based model
+
 Stratified splitting
+
 Optimized using Weighted F1 Score
+
 📈 Model Evaluation
+
 Metrics used:
 
 Accuracy
+
 Precision
+
 Recall
+
 F1 Score
+
 Weighted F1 Score (Primary Metric)
+
 🧠 Why Weighted F1?
+
 Treats all classes equally
+
 Prevents bias toward majority classes
+
 Crucial for detecting minority classes like Suicidal
+
 🏆 Model Comparison
+
 
 | Model                 | Accuracy | Macro F1 | Observation                                      |
 |----------------------|----------|----------|--------------------------------------------------|
@@ -125,6 +152,7 @@ Crucial for detecting minority classes like Suicidal
 | Random Forest        | ~0.72    | ~0.70    | Weak on minority classes                         |
 
 🔧 Hyperparameter Tuning on SVM and Logistic Regression model
+
 Performed using GridSearchCV:
 
 param_grid = { 'C': [0.01, 0.1, 1, 10], 'max_iter': [3000, 5000] } ✅ Best Parameters: C = 0.1,class_weight="balanced"
@@ -140,6 +168,7 @@ param_grid = { 'C': [0.01, 0.1, 1, 10], 'max_iter': [3000, 5000] } ✅ Best Para
 👉 Improved generalization and reduced overfitting
 
 🧪 Sample Prediction
+
 Input:
 
 I do not feel like living anymore
@@ -147,5 +176,7 @@ I do not feel like living anymore
 Output:
 
 Prediction: Suicidal
+
 ⚠️ Please seek immediate help
+
 📞 Helpline (India): 9272333922 💻 UI (Streamlit App) Interactive text input Real-time prediction Color-coded outputs Safety alerts for high-risk cases
