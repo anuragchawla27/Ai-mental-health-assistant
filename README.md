@@ -1,7 +1,9 @@
 🧠 Mental Health Text Classification (NLP Mini Project)
+
 An end-to-end Machine Learning project that classifies mental health conditions from user text and provides supportive, safety-aware responses through an interactive Streamlit UI.
 
 🚀 Overview
+
 This project implements a mental health classification system that analyzes user-written text and predicts psychological conditions such as:
 
 Anxiety
@@ -11,9 +13,11 @@ Bipolar
 Personality Disorder
 Suicidal
 Normal
+
 The system is designed with a safety-first approach, especially for detecting high-risk cases like suicidal intent.
 
 🎯 Objective
+
 Build a reliable NLP-based classification model
 Handle class imbalance effectively
 Prioritize recall for critical classes (e.g., Suicidal)
